@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MonkOp </title>
+</head>
+<body>
+    <style>
+        /*  Heading of head */
+
+         .typewriter h1 {
+            overflow: hidden;
+          
+            border-right: .15em solid orange;
+            
+            white-space: nowrap;
+            
+            margin: 0 auto;
+           
+            letter-spacing: .15em;
+           
+            animation:
+                typing 4.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+      
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 80%
+            }
+        }
+
+      
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: orange;
+            }
+        }
+
+        /* last */
+        .row {
+            display: flex;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+            flex: 33.33%;
+            padding: 5px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        @media screen and (max-width: 500px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        /* Button */
+        .block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.block:hover {
+  background-color: #ddd;
+  color: rgb(40, 201, 126);
+}
+
+</style>
+
+    <div class="typewriter">
+
+    <h1> Welcome To MonkOp Wesite </h1>
+<hr>
+
+</div>
+
+    <button onclick="typeWriter()" class="block" ><a href="https://textop.herokuapp.com/"><h4  style="font-family:verdana"> Check Out My site First</h4> </a></button>  
+    <br>
+    <button onclick="typeWriter()" class="block" ><a href="https://drive.google.com/file/d/1V3ZQUggyDzS2_3SvxRRn6FA_lUtaWqy9/view?usp=sharing"  style="font-family:verdana"> Download Boruto 216 Episode </a></button>  
+    <br>
+    <button onclick="typeWriter()" class="block" ><a href="https://drive.google.com/file/d/1V3ZQUggyDzS2_3SvxRRn6FA_lUtaWqy9/view?usp=sharing"  style="font-family:verdana"> Download Boruto 217 Episode </a></button>
+    <br>
+    <button onclick="typeWriter()" class="block" ><a href="https://textop.herokuapp.com/"><h4  style="font-family:verdana"> wait for Boruto 218 Episode </h4> </a></button>  
+    <br>
+    <button onclick="typeWriter()" class="block" ><a href="https://textop.herokuapp.com/"><h4  style="font-family:verdana"> Next Episode will be release on my first link so check first link </h4> </a></button>  
+    <br>
+    <button onclick="typeWriter()" class="block" ><a href="https://www.youtube.com/c/MonkOp"><h4  style="font-family:verdana"> Subscribe My Youtube Channel </h4> </a></button>  
+    <br>
+    
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = ' Wait for a min link will be genrated ';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+</div>
+<div class="typewriter">
+    <h1>Thanks for coming this site</h1>
+</div>
+
+</body>
+</html>
+
